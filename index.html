@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beingHuman.com</title>
+  <style>
+body {
+  min-height: 100vh; /* Ensure the body covers the viewport height */
+  margin: 0;
+  background: linear-gradient(to bottom, #010823, #0922c4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin: 20px; /* Adjusted margin */
+  font-size: 2rem; /* Fixed font-size unit */
+  color: Yellow;    
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-bar {
+  font-size: larger;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Space between items */
+}
+
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: White; /* Adjust link color as needed */
+}
+
+footer {
+  padding: 20px;
+  color:rgba(244, 246, 250, 0.5);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  flex-direction: column;
+  flex: 1;
+}
+
+.foot {
+  margin-bottom: 10px;
+}
+
+.foot p {
+  margin: 5px;
+}
+
+.p-1, .p-2, .p-3, .p-4, .p-5{
+  display: inline;
+  
+}
+.pp, .pp2, .pp3, .pp4, .pp5 {
+  text-decoration: none;
+  color: rgba(244, 246, 250, 0.5);
+}
+
+.foot-copy {
+  margin-top: 10px;
+}
+.desc1 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  width: auto;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+}
+.desc1 h1 {
+  color: rgb(255, 162, 0);
+}
+
+.desc2 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  width: auto;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+
+  
+}
+
+.desc2 h1 {
+  color: greenyellow;
+}
+
+@keyframes swipe-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.swipe-right {
+  animation: swipe-right 1s forwards;
+}
+
+/* Add this if you want to control the visibility before animation */
+.scroll-section {
+  opacity: 2;
+  transition: opacity 1s ease-in-out;
+}
+
+.scroll-section.visible {
+  opacity: 1;
+}
+
+.desc3 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  width: auto;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+
+}
+
+.desc3 h1 {
+  color: rgb(92, 255, 255);
+}
+
+.linkedin, .instagram {
+  border-radius: 10px;
+  width: 40px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.head {
+  text-decoration: none;
+  
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="head"><h2>beingHuman</h2></a>
+    <nav class="nav-bar">
+      <ul class="set">
+        <li class="item"><a href="about.html">About Me</a></li>
+        <li class="item"><a href="service.html">Professional Services</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="desc1">
+  <h1>
+    Cheerio and Welcome Aboard!
+  </h1>
+  <p>
+    Where ideas, experiences, and stories come together. Step into a space built to inspire connection and discovery. I'm glad you're here—take a look around, stay as long as you'd like, and let's explore the human side of everything.
+  </p>
+</div>
+  
+<div class="desc2 scroll-section">
+  <h1>
+    Nevertheless, Folks! Your Man's got yon covered.
+  </h1>
+<p>
+  You’re in for a treat as you explore beingHuman.com. And just so you know, there's another exciting venture we're involved with—WebWorksPro. It's where we channel our web expertise to deliver standout digital solutions. If you’re curious about how we bring innovative web services to life, take a peek at what WebWorksPro has to offer. 
+</p>
+</div>
+  
+<div class="desc3">
+  <h1>
+    Web 5 Is sick as F@ck!
+  </h1>
+  <p>
+    Curiosity piqued? At ByteMash, something exciting is on the horizon. Stay tuned for a unique experience that blends innovation with intrigue. What’s coming next might just surprise you.
+  </p>
+</div>
+
+
+<footer>
+  <div class="foot">
+   <a href="termsofservice.html" class="pp2"> <p class="p-1">Terms of Service</p></a>
+    <p class="p-mid">|</p>
+    <a class="pp" href="Privacy_Policy.html"><p class="p-2">Privacy Policy</p></a>
+    <p class="icons">
+     <a href="https://www.instagram.com/abdullahmahmad97?igsh=MWY0dTg5NG52N3VqYg==/"><img class="instagram" src="icons/icc1.png" alt=""></a> 
+      <a href="https://www.linkedin.com/in/abdullah-ahmad-a13aa82b5/"><img class="linkedin" src="icons/icc2.png" alt=""></a>
+    </p>
+  </div>
+  <div class="foot-copy">
+    <p>&copy; <span id="copyright-year"></span> All rights reserved.</p>
+  </div>
+
+  <script>
+    
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const yearSpan = document.getElementById('copyright-year');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+});
+
+  </script>
+</footer>
+</body>
+</html>

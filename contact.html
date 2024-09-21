@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beingHuman.com</title>
+  <style>
+body {
+  min-height: 100vh; /* Ensure the body covers the viewport height */
+  margin: 0;
+  background: linear-gradient(to bottom, #1231b0, #000000);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin: 20px; /* Adjusted margin */
+  font-size: 2rem; /* Fixed font-size unit */
+  color: Yellow;    
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-bar {
+  font-size: larger;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Space between items */
+}
+
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: White; /* Adjust link color as needed */
+}
+
+footer {
+  padding: 20px;
+  color:rgba(244, 246, 250, 0.5);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  flex-direction: column;
+  flex: 1;
+}
+
+.foot {
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.foot p {
+  margin: 5px;
+}
+
+.p-1, .p-2, .p-mid {
+  display: inline;
+}
+
+.pp,.pp2 {
+  text-decoration: none;
+  color:rgba(244, 246, 250, 0.5);
+}
+
+.foot-copy {
+  margin-top: 10px;
+  font-size: small;
+}
+
+.linkedin, .instagram, .email, .telegram {
+  border-radius: 10px;
+  width: 40px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.telegram, .email {
+  display: flex;
+}
+
+.desc1 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  width: auto;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+}
+.desc1 h1 {
+  color: rgb(255, 162, 0);
+}
+
+.desc2 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  width: auto;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between the image and the link */
+}
+
+.book {
+  max-width: 150px; /* Set the maximum width of the book image */
+}
+
+.desc2 a {
+  color: rgb(255, 162, 0); /* Change link color to match h1 */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Adjust font size of the link */
+}
+
+
+.contact-info {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+
+.contact-item img {
+  width: 40px;
+  height: auto;
+}
+
+.msg-1, .msg-2 {
+  color: white;
+}
+
+.email-link, .tg-link {
+  text-decoration: none;
+  color: yellowgreen;
+}
+
+.donation {
+  padding: 10px 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:aqua;
+  border: solid 2.5px aqua;
+  background-color: black;
+  font-size: 34px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  text-shadow: 0 10px 100px aqua, 0 10px 80px aqua, 0 10px 60px aqua;
+  box-shadow: 0 6px #06b7d4, 0 12px rgba(0, 0, 0, 0.2); /* Light blue shadow with darker shadow beneath */
+  border-radius: 8px;
+  transition: all 0.1s ease-in-out;
+}
+
+
+
+.donation:active {
+  transform:scaleZ(6px); /* Moves the button down */
+  
+  /* Reduce the shadow to simulate the button sinking */
+  box-shadow: 0 2px #06b7d4, 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 18px #06b7d4, 10px 14px rgba(0, 0, 0, 0.3);
+}
+.head {
+  text-decoration: none;
+  
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="head"><h2>beingHuman</h2></a>
+    <nav class="nav-bar">
+      <ul class="set">
+        <li class="item"><a href="about.html">About Me</a></li>
+        <li class="item"><a href="service.html">Professional Services</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="desc1">
+  <h1>
+    Contact information
+  </h1>
+  <p>
+    Reach me out for further queries and related subjects:
+    </p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <img class="email" src="icons/emailicon.PNG" alt="">
+        <p class="msg-1">Drop a Mail at <a class="email-link" href="mailto:pinesalex22@gmail.com">pinesalex22@gmail.com</a></p>
+      </div>
+      <div class="contact-item">
+        <img class="telegram" src="icons/tgicon.PNG" alt="">
+        <p class="msg-2">Send me a message on my Telegram handle <a class="tg-link" href="">@iabdullah2025</a></p>
+      </div>
+
+    <div class="desc2">
+      <p>If you want to know more about me, you can grab a copy of my book by clicking over the provided link:</p>
+      <p>
+      <img class="book" src="pics/INCOGNITO.png" alt="">
+      </p>
+      <a href="https://www.amazon.com/dp/B0CR6SKTXS">Purchase Exclusively From Amazon.com</a>
+    </div>
+   
+</div>
+
+<div class="desc3">
+  <p>
+    If you are generous enough, perhaps you can raise funds for my animation projects and other promising startups
+  </p>
+     <a href="docs/donation details.pdf" download="donation details.pdf"><button type="button" class="donation" dropzone="true"><b>LET'S RAISE FUNDS!</b></button></a>
+</div>
+
+
+
+
+
+  <footer>
+    <div class="foot">
+      <a href="termsofservice.html" class="pp2"><p class="p-1">Terms of Service</p></a>
+      <p class="p-mid">|</p>
+      <a href="Privacy_Policy.html" class="pp"><p class="p-2">Privacy Policy</p></a>
+      <p class="icons">
+        <a href="https://www.instagram.com/abdullahmahmad97?igsh=MWY0dTg5NG52N3VqYg==/"><img class="instagram" src="icons/icc1.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/abdullah-ahmad-a13aa82b5/"><img class="linkedin" src="icons/icc2.png" alt=""></a>
+      </p>
+    </div>
+    <div class="foot-copy">
+      <p>&copy; <span id="copyright-year"></span> All rights reserved.</p>
+    </div>
+  
+    <script>
+      
+  
+  document.addEventListener('DOMContentLoaded', (event) => {
+      const yearSpan = document.getElementById('copyright-year');
+      const currentYear = new Date().getFullYear();
+      yearSpan.textContent = currentYear;
+  });
+  
+    </script>
+  </footer>
+</body>
+</html>

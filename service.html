@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beingHuman.com</title>
+  <style>
+body {
+  min-height: 100vh; /* Ensure the body covers the viewport height */
+  margin: 0;
+  background: linear-gradient(to bottom, #010823, #0922c4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin: 20px; /* Adjusted margin */
+  font-size: 2rem; /* Fixed font-size unit */
+  color: Yellow;    
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-bar {
+  font-size: larger;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Space between items */
+}
+
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: White; /* Adjust link color as needed */
+}
+
+footer {
+  padding: 20px;
+  color:rgba(244, 246, 250, 0.5);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  flex-direction: column;
+  flex: 1;
+}
+
+.foot {
+  margin-bottom: 10px;
+}
+
+.foot p {
+  margin: 5px;
+}
+
+.p-1, .p-2, .p-mid {
+  display: inline;
+}
+
+.pp, .pp2{
+  text-decoration: none;
+  color: rgba(244, 246, 250, 0.5);
+}
+.foot-copy {
+  margin-top: 10px;
+}
+.linkedin, .instagram {
+  border-radius: 10px;
+  width: 40px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.desc1 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  width: auto;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+}
+
+.desc1 h3 {
+  color:aqua;
+}
+.and {
+  color: orange;
+}
+
+.desc2 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  width: auto;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+}
+.desc2 h1 {
+  color: greenyellow;
+}
+
+.desc3 {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  width: auto;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+
+}
+.desc3 h1 {
+  color: yellow;
+}
+.desc3 h3 {
+  color:aquamarine;
+}
+
+.cont {
+  padding: 10px 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:aqua;
+  border: solid 2.5px aqua;
+  background-color: black;
+  font-size: 34px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  text-shadow: 0 10px 100px aqua, 0 10px 80px aqua, 0 10px 60px aqua;
+  box-shadow: 6px 10px #06b7d4, 15px 12px rgba(0, 0, 0, 0.2); /* Light blue shadow with darker shadow beneath */
+  border-radius: 8px;
+  transition: all 0.1s ease-in-out;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.cont:active {
+  transform:scaleZ(6px); /* Moves the button down */
+  
+  /* Reduce the shadow to simulate the button sinking */
+  box-shadow: 0 2px #06b7d4, 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 18px #06b7d4, 10px 14px rgba(0, 0, 0, 0.3);
+}
+
+.cont2 {
+  padding: 10px 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 238, 0);
+  border: solid 2.5px rgb(255, 238, 0);
+  background-color: black;
+  font-size: 34px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  text-shadow: 0 10px 100px rgb(255, 238, 0), 0 10px 80px rgb(255, 238, 0), 0 10px 60px rgb(255, 238, 0);
+  box-shadow: 6px 10px rgb(255, 238, 0), 15px 12px rgba(0, 0, 0, 0.2); /* Light blue shadow with darker shadow beneath */
+  border-radius: 8px;
+  transition: all 0.1s ease-in-out;
+}
+
+.cont2:active {
+  transform:scaleZ(6px); /* Moves the button down */
+  
+  /* Reduce the shadow to simulate the button sinking */
+  box-shadow: 0 2px rgb(255, 238, 0), 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 18px rgb(255, 238, 0), 10px 14px rgba(0, 0, 0, 0.3);
+}
+
+.cont2 a {
+  text-decoration: none;
+  color:rgb(255, 238, 0);
+}
+
+.head {
+  text-decoration: none;
+  
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="head"><h2>beingHuman</h2></a>
+    <nav class="nav-bar">
+      <ul class="set">
+        <li class="item"><a href="about.html">About Me</a></li>
+        <li class="item"><a href="service.html">Professional Services</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="desc1">
+    <h1>
+      Tailored Web Solutions <em class="and">&&</em> Hosting for Every Need
+    </h1>
+    <p>
+      WebWorksPro is a web services agency co-founded by Abdullah and his friend Mian Muhammad Ahsan. It focuses on delivering a wide range of web solutions, tailored to the needs of its clients. Despite other projects slowing down its pace, the initiative remains active and offers comprehensive web development services.
+    </p>
+    <h3>
+      Services Provided by WebWorksPro
+    </h3>
+    <ol>
+      <li>
+        <strong>Static Sites:</strong> Simple, fast-loading websites with fixed content. Ideal for businesses or individuals needing an online presence without frequent updates.
+      </li>
+      <li>
+        <strong>CMS sites:</strong> Content management systems (e.g., WordPress, Joomla) that allow clients to easily update and manage website content without technical expertise.
+      </li>
+      <li>
+        <strong>Blog Sites:</strong> Websites specifically designed for bloggers and content creators who need a platform to publish regular articles or updates.
+      </li>
+      <li>
+        <strong>E-commerece Sites:</strong> Customized online stores with features like product listings, shopping carts, and secure payment integrations, tailored to help businesses sell products or services online.
+      </li>
+      <li>
+        <strong>Web Applications:</strong> Dynamic web apps designed to handle more complex interactions and functionality, suited for businesses needing custom-built solutions.
+      </li>
+    </ol>
+<h3>
+  Hosting Solutions
+</h3>
+ <p>
+  WebWorksPro goes beyond development by purchasing hosting plans for clients based on their specific needs and budget, ensuring a cost-effective and efficient solution for hosting their websites or applications.
+ </p>
+ <p>
+  The combination of technical expertise and client-focused service allows WebWorksPro to cater to a broad audience, from small businesses to larger enterprises.
+</p>
+
+<a href="https://api.whatsapp.com/send?phone=+923464524559&text=Hello%20WebWorksPro%2C%20I%27d%20like%20to%20inquire%20about%20your%20services." target="_blank">
+  <button type="button" class="cont">Contact WebWorksPro Via WhatsApp</button>
+</a>
+<a href="mailto:mmahsan322@gmail.com">
+  <button type="button" class="cont">Contact WebWorksPro Via Email</button>
+</a>
+
+  </div>
+
+  <div class="desc2">
+    <h1>
+      Art That Speaks
+    </h1>
+    <p>
+      I create custom, paid artwork for anyone looking for visually captivating pieces that are enjoyable to look at, whether it's to pass time or enhance their environment. My artwork spans a wide variety of styles and mediums, allowing me to cater to different tastes and needs. I specialize in:
+    </p>
+    <ul>
+      <dd>
+        <strong>Realistic Portraits:</strong> Detailed, lifelike representations of people or subjects.
+      </dd>
+      <dd>
+        <strong>Cartoons:</strong> Fun, stylized illustrations with a playful and light-hearted touch.
+      </dd>
+      <dd>
+        <strong>Traditional and Digital Comic Books:</strong> Creating engaging comic narratives, whether in a classic hand-drawn style or digitally rendered.
+      </dd>
+      <dd>
+        <strong>Surreal and Dadaistic Art:</strong> Thought-provoking, unconventional pieces that challenge reality and explore abstract concepts.
+      </dd>
+      <dd>
+        <strong>Digital Art:</strong> Modern, tech-based creations that use digital tools for unique visual experiences.
+      </dd>
+    </ul>
+  </div>
+
+<div class="desc3">
+  <h1>
+    Open to Work
+  </h1>
+  <p>
+    In addition to my work with WebWorksPro and providing paid art services, I am also available for freelance opportunities across various domains. Here’s a detailed look at the freelance services I offer:
+  </p>
+  <h3>
+    Freelance Writing Services
+  </h3>
+  <ul>
+    <dd>
+      <strong>Ghostwriting:</strong> Crafting content on behalf of others, including books, articles, and other written materials. This involves capturing the client's voice and message while ensuring high-quality writing.
+    </dd>
+    <dd>
+      <strong>Content Writing:</strong> Creating engaging and informative content for websites, blogs, marketing materials, and more. My goal is to produce compelling content that resonates with the target audience.
+    </dd>
+    <dd>
+      <strong>Book Writing:</strong> Developing full-length manuscripts, whether for fiction, non-fiction, or any genre. I work closely with clients to bring their ideas to life and ensure a polished final product.
+    </dd>
+  </ul>
+  <h3>
+    Programming Language Tutoring
+  </h3>
+  <p>
+    I offer personalized instruction in several programming languages, suitable for complete beginners, aspiring professionals, and hobbyists alike. Whether you aim to land a six-figure job, start your own company, or simply enjoy learning, I can provide guidance and support. The languages I teach include:
+  </p>
+  <ul>
+    <dd>
+      <strong><code>Javascript:</code></strong> Essential for web development, enabling interactive features on websites.
+      </dd>
+      <dd>
+      <strong><code>Typescript:</code></strong> A superset of JavaScript that adds static typing, enhancing code quality and maintainability.
+    </dd>
+    <dd>
+      <strong><code>Hypertext-preprocessor(PHP):</code></strong> A server-side scripting language commonly used for web development, especially for building dynamic websites.
+      </dd>
+      <dd>
+      <strong><code>Python:</code></strong> A versatile language known for its readability and wide range of applications, from web development to data science.
+      </dd>
+      <dd>
+      <strong><code>Go(Golang):</code></strong> A statically typed, compiled language designed for performance and efficiency, often used in cloud and server-side applications.
+    </dd>
+  </ul>
+  <p>
+    Each of these languages has its own strengths and applications, and I can tailor my teaching approach to suit the client’s learning goals and preferences.
+  </p>
+
+
+  <button type="button" class="cont2"><a href="contact.html">Learn More</a></button>
+
+</div>
+
+  <footer>
+    <div class="foot">
+      <a href="termsofservice.html" class="pp2"><p class="p-1">Terms of Service</p></a>
+      <p class="p-mid">|</p>
+      <a href="Privacy_Policy.html" class="pp"><p class="p-2">Privacy Policy</p></a>
+      <p class="icons">
+        <a href="https://www.instagram.com/abdullahmahmad97?igsh=MWY0dTg5NG52N3VqYg==/"><img class="instagram" src="icons/icc1.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/abdullah-ahmad-a13aa82b5/"><img class="linkedin" src="icons/icc2.png" alt=""></a>
+      </p>
+    </div>
+    <div class="foot-copy">
+      <p>&copy; <span id="copyright-year"></span> All rights reserved.</p>
+    </div>
+  
+    <script>
+      
+  
+  document.addEventListener('DOMContentLoaded', (event) => {
+      const yearSpan = document.getElementById('copyright-year');
+      const currentYear = new Date().getFullYear();
+      yearSpan.textContent = currentYear;
+  });
+  
+    </script>
+  </footer>
+
+
+</body>
+</html>
